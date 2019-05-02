@@ -1,0 +1,5 @@
+cov_XY = np.ndarray((2, 2))
+cov_XY[0][0] = ((x_centered - x_centered.mean()) * (x_centered - x_centered.mean())).mean()
+cov_XY[0][1] = ((x_centered - x_centered.mean()) * (y_centered - y_centered.mean())).mean()
+cov_XY[1][0] = ((y_centered - y_centered.mean()) * (x_centered - x_centered.mean())).mean()
+cov_XY[1][1] = ((y_centered - y_centered.mean()) * (y_centered - y_centered.mean())).mean()
